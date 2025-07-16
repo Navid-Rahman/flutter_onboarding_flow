@@ -205,15 +205,14 @@ class MainApp extends StatelessWidget {
             const SizedBox(height: 40),
             ElevatedButton(
               onPressed: () async {
+                final navigator = Navigator.of(context);
                 await OnboardingStorage.resetOnboarding();
                 // Restart the app or navigate back to onboarding
-                if (context.mounted) {
-                  Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(
-                      builder: (_) => const OnboardingDemo(),
-                    ),
-                  );
-                }
+                navigator.pushReplacement(
+                  MaterialPageRoute(
+                    builder: (_) => const OnboardingDemo(),
+                  ),
+                );
               },
               child: const Text('Reset Onboarding'),
             ),
