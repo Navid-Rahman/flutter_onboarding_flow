@@ -20,7 +20,7 @@
 /// - **[OnboardingTemplates]**: Pre-built templates for common onboarding scenarios
 ///
 /// ## Quick Start
-/// 
+///
 /// ### Basic Usage
 /// ```dart
 /// import 'package:flutter_onboarding_flow/flutter_onboarding_flow.dart';
@@ -103,7 +103,7 @@
 ///
 /// ## Supported Platforms
 /// - ✅ Android
-/// - ✅ iOS  
+/// - ✅ iOS
 /// - ✅ Web
 /// - ✅ Desktop (Windows, macOS, Linux)
 ///

@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import '../models/onboarding_config.dart';
 
 /// A widget that provides navigation controls for the onboarding flow.
-/// 
+///
 /// This widget renders skip, back, next, and done buttons based on the current
 /// onboarding state and configuration. It automatically shows/hides buttons
 /// contextually and provides proper accessibility support.
-/// 
+///
 /// The layout is responsive and follows Material Design guidelines, with
 /// proper button placement and spacing. All buttons are fully customizable
 /// through the provided configuration.
-/// 
+///
 /// Example usage:
 /// ```dart
 /// NavigationControls(
@@ -52,7 +52,7 @@ class NavigationControls extends StatelessWidget {
   final VoidCallback? onDone;
 
   /// Creates navigation controls with the specified configuration and callbacks.
-  /// 
+  ///
   /// The [currentIndex], [totalPages], and [config] parameters are required.
   /// Callback functions are optional but should be provided for functionality.
   const NavigationControls({

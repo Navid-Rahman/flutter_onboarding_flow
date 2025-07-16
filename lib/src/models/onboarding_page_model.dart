@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 /// Represents a single onboarding page with all its content and styling options.
-/// 
+///
 /// This model defines the structure and appearance of an individual page within
 /// the onboarding flow. It supports both image assets and custom widgets for
 /// maximum flexibility in design.
-/// 
+///
 /// Example usage:
 /// ```dart
 /// OnboardingPageModel(
@@ -57,7 +57,7 @@ class OnboardingPageModel {
   final CrossAxisAlignment? crossAxisAlignment;
 
   /// Creates a new onboarding page model.
-  /// 
+  ///
   /// The [title] and [description] parameters are required.
   /// All other parameters are optional and will use sensible defaults.
   const OnboardingPageModel({
@@ -74,10 +74,10 @@ class OnboardingPageModel {
   });
 
   /// Creates a copy of this page model with the given fields replaced with new values.
-  /// 
+  ///
   /// This method is useful for creating variations of an existing page or
   /// updating specific properties while preserving others.
-  /// 
+  ///
   /// Example:
   /// ```dart
   /// final newPage = originalPage.copyWith(

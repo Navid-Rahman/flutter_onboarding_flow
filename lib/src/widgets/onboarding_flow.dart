@@ -97,7 +97,7 @@ class OnboardingFlow extends StatefulWidget {
   ///   SharedPreferences.getInstance().then((prefs) {
   ///     prefs.setBool('onboarding_completed', true);
   ///   });
-  ///   
+  ///
   ///   // Navigate to main app
   ///   Navigator.pushReplacement(
   ///     context,

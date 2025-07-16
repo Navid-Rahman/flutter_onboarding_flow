@@ -157,14 +157,14 @@ class OnboardingController extends ChangeNotifier {
   }
 
   /// Navigates directly to a specific page in the onboarding flow.
-  /// 
+  ///
   /// This method allows jumping to any page within the valid range.
   /// It's useful for implementing features like page indicators that
   /// allow direct navigation to specific pages.
-  /// 
+  ///
   /// Parameters:
   /// - [index]: The target page index (0-based)
-  /// 
+  ///
   /// The method validates the index and prevents navigation if:
   /// - An animation is already in progress
   /// - The index is out of bounds (< 0 or >= totalPages)
@@ -197,11 +197,11 @@ class OnboardingController extends ChangeNotifier {
   }
 
   /// Skips the onboarding flow entirely and marks it as completed.
-  /// 
+  ///
   /// This method is called when the user taps the skip button. It immediately
   /// marks the onboarding as completed in storage (if auto-save is enabled)
   /// and triggers the completion callback.
-  /// 
+  ///
   /// The method bypasses any remaining pages and takes the user directly
   /// to the main application experience.
   Future<void> skip() async {
@@ -212,17 +212,17 @@ class OnboardingController extends ChangeNotifier {
         completed: true,
       );
     }
-    
+
     // Trigger completion callback
     _onComplete?.call();
   }
 
   /// Completes the onboarding flow normally after reaching the last page.
-  /// 
+  ///
   /// This method is called when the user taps the completion button on
   /// the final onboarding page. It marks the onboarding as completed
   /// and triggers the completion callback.
-  /// 
+  ///
   /// Unlike [skip], this method indicates that the user has gone through
   /// the entire onboarding experience.
   Future<void> complete() async {
@@ -233,21 +233,21 @@ class OnboardingController extends ChangeNotifier {
         completed: true,
       );
     }
-    
+
     // Trigger completion callback
     _onComplete?.call();
   }
 
   /// Updates the current page index when the PageView changes.
-  /// 
+  ///
   /// This method is called by the PageView widget whenever the user
   /// swipes to a new page or when programmatic navigation occurs.
   /// It ensures the controller's state stays synchronized with the
   /// actual page position.
-  /// 
+  ///
   /// Parameters:
   /// - [index]: The new current page index
-  /// 
+  ///
   /// This method should only be called by the PageView's onPageChanged callback.
   void updateCurrentIndex(int index) {
     _currentIndex = index;
@@ -255,11 +255,11 @@ class OnboardingController extends ChangeNotifier {
   }
 
   /// Disposes of the controller and its resources.
-  /// 
+  ///
   /// This method should be called when the onboarding flow is no longer
   /// needed to prevent memory leaks. It disposes of the PageController
   /// and calls the parent dispose method.
-  /// 
+  ///
   /// The method is typically called automatically by the framework
   /// when the associated widget is disposed.
   @override

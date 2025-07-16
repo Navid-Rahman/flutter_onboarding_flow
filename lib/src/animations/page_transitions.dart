@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import '../models/onboarding_config.dart';
 
 /// A utility class for creating custom page transition animations in onboarding flows.
-/// 
+///
 /// This class provides various transition types including slide, fade, zoom, and scale
 /// animations. It supports both forward and reverse transitions for a complete
 /// navigation experience.
-/// 
+///
 /// The class is designed to work seamlessly with the onboarding configuration
 /// system and provides smooth, performant animations between pages.
-/// 
+///
 /// Example usage:
 /// ```dart
 /// final transition = PageTransitions.buildTransition(
@@ -24,20 +24,20 @@ class PageTransitions {
   PageTransitions._();
 
   /// Builds a transition widget based on the specified animation type.
-  /// 
+  ///
   /// This method creates the appropriate transition widget for the given
   /// [PageTransitionType]. Each transition type provides a different visual
   /// effect when moving between onboarding pages.
-  /// 
+  ///
   /// Parameters:
   /// - [child]: The widget to apply the transition to (usually the new page)
   /// - [animation]: The animation controller driving the transition
   /// - [type]: The type of transition animation to apply
   /// - [reverse]: Whether this is a reverse transition (for back navigation)
-  /// 
+  ///
   /// Returns:
   /// A [Widget] with the applied transition animation.
-  /// 
+  ///
   /// Supported transition types:
   /// - [PageTransitionType.slide]: Horizontal slide animation
   /// - [PageTransitionType.fade]: Opacity fade animation
@@ -89,21 +89,21 @@ class PageTransitions {
   }
 
   /// Creates a complete route with the specified transition animation.
-  /// 
+  ///
   /// This method is useful for programmatic navigation where you need
   /// to create a custom route with onboarding-style transitions. It wraps
   /// the [buildTransition] method in a complete [Route] object.
-  /// 
+  ///
   /// Parameters:
   /// - [page]: The destination page widget
   /// - [type]: The type of transition animation
   /// - [duration]: Animation duration (defaults to 300ms)
   /// - [curve]: Animation curve (defaults to Curves.easeInOut)
   /// - [reverse]: Whether this is a reverse transition
-  /// 
+  ///
   /// Returns:
   /// A [Route<T>] that can be used with Navigator.push() or similar methods.
-  /// 
+  ///
   /// Example:
   /// ```dart
   /// final route = PageTransitions.createRoute(
@@ -123,11 +123,11 @@ class PageTransitions {
     return PageRouteBuilder<T>(
       // The page builder provides the destination widget
       pageBuilder: (context, animation, secondaryAnimation) => page,
-      
+
       // Set both forward and reverse transition durations
       transitionDuration: duration,
       reverseTransitionDuration: duration,
-      
+
       // Build the actual transition animation
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         // Apply the specified curve to the animation
@@ -135,7 +135,7 @@ class PageTransitions {
           parent: animation,
           curve: curve,
         );
-        
+
         // Return the transition widget
         return buildTransition(
           child: child,

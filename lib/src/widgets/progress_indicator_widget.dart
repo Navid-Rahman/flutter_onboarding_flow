@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import '../models/onboarding_config.dart';
 
 /// A customizable progress indicator widget for displaying user progress through onboarding screens.
-/// 
+///
 /// This widget supports multiple display types including dots, progress bars, and none (hidden).
 /// It automatically adapts to the current theme colors while allowing full customization
 /// of appearance and behavior.
-/// 
+///
 /// The widget is designed to be accessible with proper semantic labeling for screen readers
 /// and includes smooth animations when transitioning between progress states.
-/// 
+///
 /// Example usage:
 /// ```dart
 /// ProgressIndicatorWidget(
@@ -62,7 +62,7 @@ class ProgressIndicatorWidget extends StatelessWidget {
   final BorderRadius? barBorderRadius;
 
   /// Creates a progress indicator widget with the specified configuration.
-  /// 
+  ///
   /// The [currentIndex] and [totalPages] parameters are required.
   /// All other parameters have sensible defaults and are optional.
   const ProgressIndicatorWidget({
@@ -98,11 +98,11 @@ class ProgressIndicatorWidget extends StatelessWidget {
   }
 
   /// Builds a dots-style progress indicator.
-  /// 
+  ///
   /// Creates a row of circular dots where the current page is highlighted
   /// with the active color and other pages use the inactive color.
   /// Includes smooth animation transitions when the current page changes.
-  /// 
+  ///
   /// The method automatically generates the correct number of dots based
   /// on [totalPages] and applies proper accessibility labeling.
   Widget _buildDots(Color activeColor, Color inactiveColor) {
@@ -131,11 +131,11 @@ class ProgressIndicatorWidget extends StatelessWidget {
   }
 
   /// Builds a bar-style progress indicator.
-  /// 
+  ///
   /// Creates a horizontal progress bar that fills based on the current
   /// progress through the onboarding flow. The bar smoothly animates
   /// as the user progresses through pages.
-  /// 
+  ///
   /// The progress percentage is calculated as (currentIndex + 1) / totalPages
   /// to show completion progress rather than just current position.
   Widget _buildBar(Color activeColor, Color inactiveColor) {

@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import '../models/onboarding_page_model.dart';
 
 /// A widget that displays a single onboarding page with its content and styling.
-/// 
+///
 /// This widget renders the visual content of an onboarding page including
 /// title, description, and optional image or custom widget. It applies
 /// the styling and layout configuration specified in the [OnboardingPageModel].
-/// 
+///
 /// The widget is fully responsive and accessible, with proper semantic
 /// labeling for screen readers. It supports both image assets and custom
 /// widgets for maximum design flexibility.
-/// 
+///
 /// The layout prioritizes custom widgets over image assets when both are
 /// provided, ensuring predictable rendering behavior.
-/// 
+///
 /// Example usage:
 /// ```dart
 /// OnboardingPageWidget(
@@ -30,7 +30,7 @@ class OnboardingPageWidget extends StatelessWidget {
   final OnboardingPageModel page;
 
   /// Creates an onboarding page widget with the specified page model.
-  /// 
+  ///
   /// The [page] parameter is required and contains all the necessary
   /// information to render the page content and apply styling.
   const OnboardingPageWidget({

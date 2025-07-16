@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 /// Configuration class that controls the behavior and appearance of the entire onboarding flow.
-/// 
+///
 /// This comprehensive configuration allows customization of navigation controls,
 /// progress indicators, animations, and storage behavior. It provides sensible
 /// defaults while allowing fine-grained control over the onboarding experience.
-/// 
+///
 /// Example usage:
 /// ```dart
 /// OnboardingConfig(
@@ -94,7 +94,7 @@ class OnboardingConfig {
   final bool autoSave;
 
   /// Creates a new onboarding configuration with the specified options.
-  /// 
+  ///
   /// All parameters are optional and have sensible defaults for typical use cases.
   /// Customize only the aspects that differ from your design requirements.
   const OnboardingConfig({
@@ -121,37 +121,37 @@ class OnboardingConfig {
 }
 
 /// Enumeration of available progress indicator types.
-/// 
+///
 /// - [dots]: Circular dots showing current page position (default)
 /// - [bar]: Linear progress bar showing completion percentage
 /// - [none]: No progress indicator displayed
-enum ProgressIndicatorType { 
+enum ProgressIndicatorType {
   /// Displays circular dots indicating current page and total pages
-  dots, 
-  
+  dots,
+
   /// Displays a linear progress bar showing completion percentage
-  bar, 
-  
+  bar,
+
   /// No progress indicator is shown
-  none 
+  none
 }
 
 /// Enumeration of available page transition animation types.
-/// 
+///
 /// - [slide]: Pages slide horizontally (default)
 /// - [fade]: Pages fade in and out
 /// - [zoom]: Pages zoom in with fade effect
 /// - [scale]: Pages scale up from center
-enum PageTransitionType { 
+enum PageTransitionType {
   /// Horizontal slide transition between pages
-  slide, 
-  
+  slide,
+
   /// Fade transition between pages
-  fade, 
-  
+  fade,
+
   /// Zoom transition with scaling and fade effects
-  zoom, 
-  
+  zoom,
+
   /// Scale transition from center point
-  scale 
+  scale
 }
