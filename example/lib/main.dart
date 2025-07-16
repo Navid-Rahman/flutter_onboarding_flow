@@ -207,11 +207,13 @@ class MainApp extends StatelessWidget {
               onPressed: () async {
                 await OnboardingStorage.resetOnboarding();
                 // Restart the app or navigate back to onboarding
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (_) => const OnboardingDemo(),
-                  ),
-                );
+                if (context.mounted) {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (_) => const OnboardingDemo(),
+                    ),
+                  );
+                }
               },
               child: const Text('Reset Onboarding'),
             ),
