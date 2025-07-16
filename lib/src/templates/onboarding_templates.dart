@@ -13,7 +13,8 @@ class OnboardingTemplates {
     return [
       OnboardingPageModel(
         title: 'Welcome to $appName',
-        description: appDescription ?? 'Let\'s get you started with a quick tour',
+        description:
+            appDescription ?? 'Let\'s get you started with a quick tour',
         imageAsset: logoAsset,
         titleStyle: const TextStyle(
           fontSize: 28,

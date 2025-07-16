@@ -222,37 +222,37 @@ OnboardingConfig(
 
 ### OnboardingPageModel
 
-| Property | Type | Description |
-|----------|------|-------------|
-| title | String | Page title |
-| description | String | Page description |
-| imageAsset | String? | Asset path for image |
-| customWidget | Widget? | Custom widget instead of image |
-| backgroundColor | Color? | Page background color |
-| titleStyle | TextStyle? | Title text style |
-| descriptionStyle | TextStyle? | Description text style |
-| padding | EdgeInsets? | Page padding |
-| mainAxisAlignment | MainAxisAlignment? | Column main axis alignment |
-| crossAxisAlignment | CrossAxisAlignment? | Column cross axis alignment |
+| Property           | Type                | Description                    |
+| ------------------ | ------------------- | ------------------------------ |
+| title              | String              | Page title                     |
+| description        | String              | Page description               |
+| imageAsset         | String?             | Asset path for image           |
+| customWidget       | Widget?             | Custom widget instead of image |
+| backgroundColor    | Color?              | Page background color          |
+| titleStyle         | TextStyle?          | Title text style               |
+| descriptionStyle   | TextStyle?          | Description text style         |
+| padding            | EdgeInsets?         | Page padding                   |
+| mainAxisAlignment  | MainAxisAlignment?  | Column main axis alignment     |
+| crossAxisAlignment | CrossAxisAlignment? | Column cross axis alignment    |
 
 ### OnboardingConfig
 
-| Property | Type | Default | Description |
-|----------|------|---------|-------------|
-| showSkipButton | bool | true | Show skip button |
-| showBackButton | bool | true | Show back button |
-| showProgressIndicator | bool | true | Show progress indicator |
-| progressIndicatorType | ProgressIndicatorType | dots | Progress indicator type |
-| progressIndicatorColor | Color? | null | Active progress color |
-| progressIndicatorBackgroundColor | Color? | null | Inactive progress color |
-| skipButtonText | String | 'Skip' | Skip button text |
-| nextButtonText | String | 'Next' | Next button text |
-| doneButtonText | String | 'Get Started' | Done button text |
-| backButtonText | String | 'Back' | Back button text |
-| animationDuration | Duration | 300ms | Page transition duration |
-| animationCurve | Curve | easeInOut | Page transition curve |
-| enableSwipeGesture | bool | true | Enable swipe navigation |
-| autoSave | bool | true | Auto-save progress |
+| Property                         | Type                  | Default       | Description              |
+| -------------------------------- | --------------------- | ------------- | ------------------------ |
+| showSkipButton                   | bool                  | true          | Show skip button         |
+| showBackButton                   | bool                  | true          | Show back button         |
+| showProgressIndicator            | bool                  | true          | Show progress indicator  |
+| progressIndicatorType            | ProgressIndicatorType | dots          | Progress indicator type  |
+| progressIndicatorColor           | Color?                | null          | Active progress color    |
+| progressIndicatorBackgroundColor | Color?                | null          | Inactive progress color  |
+| skipButtonText                   | String                | 'Skip'        | Skip button text         |
+| nextButtonText                   | String                | 'Next'        | Next button text         |
+| doneButtonText                   | String                | 'Get Started' | Done button text         |
+| backButtonText                   | String                | 'Back'        | Back button text         |
+| animationDuration                | Duration              | 300ms         | Page transition duration |
+| animationCurve                   | Curve                 | easeInOut     | Page transition curve    |
+| enableSwipeGesture               | bool                  | true          | Enable swipe navigation  |
+| autoSave                         | bool                  | true          | Auto-save progress       |
 
 ## Accessibility
 

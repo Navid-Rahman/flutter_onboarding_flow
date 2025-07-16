@@ -57,7 +57,8 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
                       totalPages: _controller.totalPages,
                       type: widget.config.progressIndicatorType,
                       activeColor: widget.config.progressIndicatorColor,
-                      inactiveColor: widget.config.progressIndicatorBackgroundColor,
+                      inactiveColor:
+                          widget.config.progressIndicatorBackgroundColor,
                     ),
                   ),
 

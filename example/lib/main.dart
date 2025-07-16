@@ -80,7 +80,8 @@ class _OnboardingDemoState extends State<OnboardingDemo> {
     return [
       OnboardingPageModel(
         title: 'Welcome to MyApp',
-        description: 'Discover amazing features and get the most out of your experience',
+        description:
+            'Discover amazing features and get the most out of your experience',
         customWidget: const Icon(
           Icons.waving_hand,
           size: 100,
@@ -100,7 +101,8 @@ class _OnboardingDemoState extends State<OnboardingDemo> {
       ),
       OnboardingPageModel(
         title: 'Stay Organized',
-        description: 'Keep track of your tasks and projects with our intuitive interface',
+        description:
+            'Keep track of your tasks and projects with our intuitive interface',
         customWidget: const Icon(
           Icons.checklist,
           size: 100,
@@ -120,7 +122,8 @@ class _OnboardingDemoState extends State<OnboardingDemo> {
       ),
       OnboardingPageModel(
         title: 'Collaborate Seamlessly',
-        description: 'Work together with your team in real-time and boost productivity',
+        description:
+            'Work together with your team in real-time and boost productivity',
         customWidget: const Icon(
           Icons.group,
           size: 100,
@@ -140,7 +143,8 @@ class _OnboardingDemoState extends State<OnboardingDemo> {
       ),
       OnboardingPageModel(
         title: 'You\'re All Set!',
-        description: 'Let\'s start your journey with MyApp. Tap below to begin exploring!',
+        description:
+            'Let\'s start your journey with MyApp. Tap below to begin exploring!',
         customWidget: const Icon(
           Icons.rocket_launch,
           size: 100,

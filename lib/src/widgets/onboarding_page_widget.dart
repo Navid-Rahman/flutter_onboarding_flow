@@ -17,7 +17,8 @@ class OnboardingPageWidget extends StatelessWidget {
       padding: page.padding ?? const EdgeInsets.all(24.0),
       child: Column(
         mainAxisAlignment: page.mainAxisAlignment ?? MainAxisAlignment.center,
-        crossAxisAlignment: page.crossAxisAlignment ?? CrossAxisAlignment.center,
+        crossAxisAlignment:
+            page.crossAxisAlignment ?? CrossAxisAlignment.center,
         children: [
           // Custom widget takes precedence over image
           if (page.customWidget != null)
@@ -42,7 +43,8 @@ class OnboardingPageWidget extends StatelessWidget {
             header: true,
             child: Text(
               page.title,
-              style: page.titleStyle ?? Theme.of(context).textTheme.headlineMedium,
+              style:
+                  page.titleStyle ?? Theme.of(context).textTheme.headlineMedium,
               textAlign: TextAlign.center,
             ),
           ),
@@ -52,7 +54,8 @@ class OnboardingPageWidget extends StatelessWidget {
           // Description
           Text(
             page.description,
-            style: page.descriptionStyle ?? Theme.of(context).textTheme.bodyLarge,
+            style:
+                page.descriptionStyle ?? Theme.of(context).textTheme.bodyLarge,
             textAlign: TextAlign.center,
           ),
         ],

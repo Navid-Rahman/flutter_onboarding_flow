@@ -88,8 +88,16 @@ void main() {
 
     test('should create permissions template', () {
       final permissions = [
-        {'title': 'Camera Access', 'description': 'Allow camera access', 'type': 'camera'},
-        {'title': 'Location Access', 'description': 'Allow location access', 'type': 'location'},
+        {
+          'title': 'Camera Access',
+          'description': 'Allow camera access',
+          'type': 'camera'
+        },
+        {
+          'title': 'Location Access',
+          'description': 'Allow location access',
+          'type': 'location'
+        },
       ];
 
       final pages = OnboardingTemplates.permissionsTemplate(

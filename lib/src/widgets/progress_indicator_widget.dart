@@ -72,7 +72,8 @@ class ProgressIndicatorWidget extends StatelessWidget {
         height: barHeight,
         decoration: BoxDecoration(
           color: inactiveColor,
-          borderRadius: barBorderRadius ?? BorderRadius.circular(barHeight! / 2),
+          borderRadius:
+              barBorderRadius ?? BorderRadius.circular(barHeight! / 2),
         ),
         child: FractionallySizedBox(
           alignment: Alignment.centerLeft,
@@ -81,7 +82,8 @@ class ProgressIndicatorWidget extends StatelessWidget {
             duration: const Duration(milliseconds: 300),
             decoration: BoxDecoration(
               color: activeColor,
-              borderRadius: barBorderRadius ?? BorderRadius.circular(barHeight! / 2),
+              borderRadius:
+                  barBorderRadius ?? BorderRadius.circular(barHeight! / 2),
             ),
           ),
         ),

@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2025-01-16
 
 ### Added
+
 - Initial release of Flutter Onboarding Flow package
 - Swipeable onboarding screens with customizable animations
 - Progress indicators (dots, bars, or custom)
@@ -20,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Example app demonstrating all features
 
 ### Features
+
 - `OnboardingFlow` widget for creating onboarding experiences
 - `OnboardingPageModel` for defining page content and styling
 - `OnboardingConfig` for customizing behavior and appearance
