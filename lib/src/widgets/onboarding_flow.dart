@@ -14,12 +14,12 @@ class OnboardingFlow extends StatefulWidget {
   final int initialPage;
 
   const OnboardingFlow({
-    Key? key,
+    super.key,
     required this.pages,
     this.config = const OnboardingConfig(),
     this.onComplete,
     this.initialPage = 0,
-  }) : super(key: key);
+  });
 
   @override
   State<OnboardingFlow> createState() => _OnboardingFlowState();

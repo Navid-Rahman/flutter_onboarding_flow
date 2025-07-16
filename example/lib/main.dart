@@ -6,7 +6,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
 }
 
 class OnboardingDemo extends StatefulWidget {
-  const OnboardingDemo({Key? key}) : super(key: key);
+  const OnboardingDemo({super.key});
 
   @override
   State<OnboardingDemo> createState() => _OnboardingDemoState();
@@ -167,7 +167,7 @@ class _OnboardingDemoState extends State<OnboardingDemo> {
 }
 
 class MainApp extends StatelessWidget {
-  const MainApp({Key? key}) : super(key: key);
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {

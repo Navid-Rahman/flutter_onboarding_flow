@@ -14,7 +14,7 @@ class ProgressIndicatorWidget extends StatelessWidget {
   final BorderRadius? barBorderRadius;
 
   const ProgressIndicatorWidget({
-    Key? key,
+    super.key,
     required this.currentIndex,
     required this.totalPages,
     this.type = ProgressIndicatorType.dots,
@@ -24,7 +24,7 @@ class ProgressIndicatorWidget extends StatelessWidget {
     this.spacing = 8.0,
     this.barHeight = 4.0,
     this.barBorderRadius,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

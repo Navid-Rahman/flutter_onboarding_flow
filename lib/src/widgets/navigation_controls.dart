@@ -12,7 +12,7 @@ class NavigationControls extends StatelessWidget {
   final VoidCallback? onDone;
 
   const NavigationControls({
-    Key? key,
+    super.key,
     required this.currentIndex,
     required this.totalPages,
     required this.config,
@@ -20,7 +20,7 @@ class NavigationControls extends StatelessWidget {
     this.onBack,
     this.onNext,
     this.onDone,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
